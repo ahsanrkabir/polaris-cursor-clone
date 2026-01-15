@@ -5,6 +5,7 @@ import { Allotment } from "allotment";
 import { FaGithub } from "react-icons/fa";
 
 import { FileExplorer } from "./file-explorer";
+import { EditorView } from "@/features/editor/components/editor-view";
 
 import { cn } from "@/lib/utils";
 
@@ -79,7 +80,7 @@ export const ProjectIdView = ({ projectId }: { projectId: Id<"projects"> }) => {
               <FileExplorer projectId={projectId} />
             </Allotment.Pane>
             <Allotment.Pane>
-              <p>Editor View</p>
+              <EditorView projectId={projectId} />
             </Allotment.Pane>
           </Allotment>
         </div>
